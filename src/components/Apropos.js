@@ -1,6 +1,7 @@
 import React, { Component,Img } from 'react'
 import PropTypes from 'prop-types'
 import photo from './icons/photo.jpg'
+
 import '../Animation.css'
 import '../App.css'
 import Animation from './Animation'
@@ -13,7 +14,6 @@ export default class Apropos extends Component {
          
             <div className=" text-white apropos">
             <div className="col-lg-12">
-            <img src={photo} width="120" height="120"  alt="M"/>
 
             <p className="text-bg2">Salut je m'appelle</p> 
            <h3 className="bold">Thabet Mongi</h3>
@@ -22,15 +22,24 @@ export default class Apropos extends Component {
               
               </div>
           
-         
-<div className="row row-4 col-4 text-color">     
+        
+<div className="row col-md-4 text-color">     
       Je suis un Ingénieur génie logiciel basé à Tunis, Tunisie, spécialisé dans la création et la conception des applications Web, Desktop et Mobile de haute qualité...
 </div>
-<div class="container">
-  <div class="row">
-    <div class="col col-md-6">
-    </div>
-    <div class="col text-color">
+
+<div className="container">
+
+    <div className="col col-sm-6">
+  
+            <button className="btn">Télécharger mon CV</button>
+            </div>
+            
+            <div className="col col-sm-6 ">  
+                <img src={photo} width="120" height="120"  alt="M"/>
+
+            </div>
+                <div class="col text-color">
+
     <h1 className="white">01. A propos</h1> 
 
 Quand je suis née, je n'ai pas pleuré mais j'ai crié "Hello World" : D!
@@ -54,11 +63,8 @@ C'est moi, bienvenue dans mon univers!
     </div>
   </div>
 </div>
-           <div className="col col-lg-6">
-            <button className="btn">Télécharger mon CV</button>
-            </div>
+          
              </div>  
-            </div>
         )
     }
 }

@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import '../App.css';
+import logo from './icons/logo.png'
 
 export default class Navbar extends Component {
    
     render() {
         return (
             <nav className="navbar navbar-expand-lg navbar-light bg ">
+       <img className="Slogo" src={logo}  alt="logo"/>
+
             <a className="navbar-brand text-white" href="#">A PROPOS</a>
             <button className="navbar-toggler bg2" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>

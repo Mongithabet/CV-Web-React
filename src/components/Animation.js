@@ -10,9 +10,8 @@ export default class Animation extends Component {
         init(myElement, { showCursor: true, strings: ['Je suis un ingénieur Développeur Web.', 'Développeur Java/JEE.' ] })
       }
       render(){
-        return <div className="row" id="myElement">
-            <div className="row" id="one"></div>
-             <div className="row" id="other"></div>
+        return <div className=" row" id="myElement">
+            <div className="row" id="one other"></div>
         </div>
       }
 }
