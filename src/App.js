@@ -1,11 +1,16 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar'
+import Apropos from './components/Apropos'
+import Competences from './components/Competences'
 function App() {
   return (
-    <div className="App container">
+    <div className="container bg">
               <Navbar/>
-
+              <br/>
+              <br/>
+              <Apropos/>
+              <Competences/>
       <header className="App-header">
         <a
           className="App-link"
