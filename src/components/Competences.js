@@ -1,20 +1,52 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+
+
 
 export default class Competences extends Component {
+  constructor(props) {
+    super(props);
    
-
+  }
+ 
+ 
     render() {
-        var style = {
-            width: '30rem',
-          };
+  
+        
         return (
-            <div class="card text-white card-color mb-3"  style={style}>
-            <div class="card-header">Langages de programmation</div>
-            <div class="card-body">
-              <h5 class="card-title">Primary card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div></div>
+  
+          <div className="container">
+          <div className="row">
+    
+            <div className="col-xs-6 col-md">
+              
+        <h1 className="text-align white">{this.props.nom}</h1>
+        
+            <div className="container">
+              
+          <div className="row">
+            <div className=" text-white col-lg-12 card-color mb-3"  >
+        <div className="card-header">{this.props.title}</div>
+            <div className="card-body text-color">
+            {this.props.cont}
+            <div className="container">
+  
+            {this.props.vv}
+
+    </div>
+    
+    <div className="col-sm">
+     </div>
+  </div>
+</div>
+           
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+        
+             
+           
         )
     }
 }

@@ -1,16 +1,14 @@
-.App {
-  text-align: center;
-  background-color: #0A1930;
-}
 
 
 .Slogo {
     width: 35px;
-    margin-right: 40px;
+    margin-right: 100px;
     padding-top: 10px;
   }
-
-
+.margin-btn{
+margin-top: 20px;
+margin-bottom: 50px;
+}
 
 
 
@@ -64,7 +62,7 @@ img{
   background-color: #4CAF50;
   color: white;
 }
-a:after {    
+.a1:after {    
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -76,7 +74,7 @@ a:after {
   transition: width 0.1s ease 0s, left 0.1s ease 0s;
   width: 0;
 }
-a:hover:after { 
+.a1:hover:after { 
   width: 100%; 
   left: 0; 
 
@@ -90,12 +88,17 @@ font-weight: 300px;
 }
 .white{
   color: aliceblue;
-
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  margin: 0 0 25px 0;
+  line-height: 1.1;
 }
 .card-color{
+  padding-top: 0px;
   background-color: #172A45;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
     font-weight: 700;
+    align-items: center;
 }
 .ityped-cursor {
   font-size: 2.2rem;
@@ -122,4 +125,16 @@ font-weight: 300px;
   100% {
     opacity: 0;
   }
+}
+.apropos{
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+}
+.photo{
+  padding-top: 40px;
+  padding-left: 0;
+}
+.text-align{
+  text-align: center;
 }
