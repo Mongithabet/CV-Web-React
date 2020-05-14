@@ -18,12 +18,12 @@ export default class Apropos extends Component {
             <p className="text-bg2">Salut je m'appelle</p> 
            <h3 className="bold">Thabet Mongi</h3>
            <div className="container-fluid">
-             <div className="row col-sm-8 "><Animation/></div>
+             <div className="row col-sm-12 col-lg-10 police"><Animation/></div>
               
               </div>
           
         
-<div className="row col-sm-4 text-color">     
+<div className="row col-sm-8 col-lg-6 col-md-8 text-color">     
       Je suis un Ingénieur génie logiciel basé à Tunis, Tunisie, spécialisé dans la création et la conception des applications Web, Desktop et Mobile de haute qualité...
 </div>
 
@@ -32,18 +32,23 @@ export default class Apropos extends Component {
     <div className="col">
     </div>
     
-    <div className="col ">
+    <div className="col-lg-7 col-sm-7">
     <button className="btn ">Télécharger mon CV</button>
     </div>
   </div>
-  <div className="container-fluid">
+  <hr></hr>
+  <hr></hr>
+  <hr></hr>
+  <hr></hr>
+  <div className="container-fluid  ">
     
   <div className="row">
-    <div className="col-xs-6">
+
+    <div className="   text-color  apropos text-align">
+
     <img  src={photo} width="150" height="150"  alt="M"/>
-    </div>
-    <div className=" col-md-8 text-color  apropos text-align">
-    <h1 className="white">01. A propos</h1> 
+
+    <h1 className=" white">01. A propos</h1> 
     Quand je suis née, je n'ai pas pleuré mais j'ai crié "Hello World" : D!
 
 J'aime le développement frontend parce que je veux que tout soit beau!

@@ -19,6 +19,7 @@ margin-bottom: 50px;
   background-color: #61dafb;
 }
 .text-bg2{
+ 
   color: rgb(100, 255, 218);
   font-size: 16px;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
@@ -26,6 +27,17 @@ margin-bottom: 50px;
   margin: 0px 0px 20px 3px;
 }
 
+.police{
+  border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
 .text-whit {
 text-decoration: lawngreen;}
 .apropos{
@@ -36,10 +48,12 @@ img{
   border-radius: 50rem;
 }
 .bold{
-  font-family:sans-serif;
-  font-size:xx-large;
-  font-weight: bold;
-
+  
+  font-size: 80px;
+    line-height: 1.1;
+    margin: 0px;
+    font-weight: 600;
+    color: rgb(230, 241, 255);
 }
 .btn{
 
@@ -59,10 +73,10 @@ img{
     flex:auto;
 }
 .btn:hover{
-  background-color: #4CAF50;
-  color: white;
+  background-color: #172A45;
+  color: aqua;
 }
-.a1:after {    
+.a2:after {    
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -74,7 +88,7 @@ img{
   transition: width 0.1s ease 0s, left 0.1s ease 0s;
   width: 0;
 }
-.a1:hover:after { 
+.a2:hover:after { 
   width: 100%; 
   left: 0; 
 
@@ -126,8 +140,9 @@ font-weight: 300px;
     opacity: 0;
   }
 }
+
 .apropos{
-  text-align: center;
+  text-align: left;
   font-size: 15px;
   font-weight: 400;
 }

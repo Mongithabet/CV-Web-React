@@ -5,17 +5,30 @@ import Apropos from './components/Apropos'
 import Competences from './components/Competences'
 import Progress from './components/Progress'
 import Experience from './components/Experience'
+import Projets from './components/Projets'
+import Education from './components/Education'
+import Social from './components/Social'
+
 function App() {
   return (
     <div className="container bg">
               <Navbar/>
               <br/>
               <br/>
-              <Apropos/>
-              <div className="container">
+              <br/>
+              <br/>
+              <div className="container-fluid">
               <div className="row">
-  <div className="col-1"></div>
-  <div className="col-10"> <Competences 
+  <div className="col-2  "></div>
+  <div className=" col-sm-12 col-lg-10 ">
+              <Apropos/>
+              <div className="col-2"></div>
+</div>
+</div></div>
+              <div className="container-fluid">
+              <div className="row">
+  <div className="col-2  "></div>
+  <div className=" col-sm-12 col-lg-8  "> <Competences 
               nom='02.Compétences professionnelles' 
               title='Langages de programmation'
               cont=''
@@ -34,14 +47,14 @@ function App() {
                  />}
               />
               </div>
-  <div className="col-1"></div>
+  <div className="col-2"></div>
 </div>
 </div>
 
 <div className="container">
               <div className="row">
-  <div className="col-1"></div>
-  <div className="col-10">
+  <div className="col-2"></div>
+  <div className="col-sm-12 col-lg-8">
                <Competences
               nom='' 
               title='Base de données'
@@ -59,14 +72,14 @@ function App() {
                  />}
                />
      </div>
-  <div className="col-1"></div>
+  <div className="col-2"></div>
 </div>
 </div>
 
 <div className="container">
               <div className="row">
-  <div className="col-1"></div>
-  <div className="col-10">
+  <div className="col-2"></div>
+  <div className="col-sm-12 col-lg-8">
 
               <Competences
                nom='' 
@@ -86,14 +99,14 @@ function App() {
                  />}
                />
                   </div>
-  <div className="col-1"></div>
+  <div className="col-2"></div>
 </div>
 </div>
 
 <div className="container">
               <div className="row">
-  <div className="col-1"></div>
-  <div className="col-10">
+  <div className="col-2"></div>
+  <div className="col-sm-12 col-lg-8">
 
 
   <Competences nom = ''  title='Autres' cont='Autres Technologies: Micronaut, ElasticSearch, Spring Security, REST APIs, Jenkins, Kubernetes, Docker, AWS, Google Cloud
@@ -102,19 +115,59 @@ Testing: Test Driven Development, JUnit, Jasmine, ChaiJS, Enzyme
 Outils: GIT, IntelliJ, Slack
 '/>
                   </div>
-  <div className="col-1"></div>
+  <div className="col-2"></div>
 </div>
 </div>
 <br/>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-1 "></div>
-    <div class="col-10 "><Experience/></div>
-    <div class="col-1 "></div>
+<div className="container-fluid">
+  <div className="row">
+    <div className="col-2 "></div>
+    <div className="col-sm-12 col-lg-8 "><Experience/></div>
+    <div className="col-2 "></div>
   </div>
-</div>
-
+  <div className="container-fluid">
+  <div className="row">
+    <div className="col-2 "></div>
+    <div className="col-sm-12 col-lg-8 "><Projets/></div>
+    <div className="col-2 "></div>
+  </div>
+  </div>
+  </div>
+  <div className="container-fluid">
+  <div className="row">
+    <div className="col-2 "></div>
+    <div className="col-sm-12 col-lg-8 "><Education/></div>
+    <div className="col-2 "></div>
+  </div>
+  </div>
+  <div className="container-fluid">
+  <div className="row">
+    <div className="col-2 "></div>
+    <div className="col-sm-12 col-lg-8 ">
+    <Competences nom = '06. Activités extracurriculaires et sociales'  title='' cont='• IAS Annual Meeting 2019 ♦ Participant, Travel Grant Recipient ♦ 2019 | Baltimore, MD, USA
+• IEEE Tunisia Section ExCom ♦ Student Branches Coordinator ♦ 2018 - Présent | ESPRIT
+• IAS Annual Meeting 2018 ♦ Participant, Travel Grant Recipient ♦ 2018 | Portland, OR, USA
+• IEEE ESPRIT CS Chapter & IAS Chapter ♦ Chair / Vice-Chair ♦ 2018 - Présent | ESPRIT
+• IEEE ESPRIT Student Branch ♦ Membre Fondateur ♦ 2017 - Présent | ESPRIT
+• Web4Innovation Mobile Dev challenge ♦ 1er Prix Application mobile (MShop) ♦ 2017 | Tunis
+• Club Smart Projects (Club Robotiques) ♦ Membre Bureau Exécutive ♦ 2015 - 2016 | ISSAT Sousse
+• Conseil scientifique ISSAT Sousse ♦ Représentant des étudiants ♦ 2015 – 2016 | ISSAT Sousse
+• Association culturelle et environnementale de Kélibia ACEK ♦ Membre Actif ♦ 2013 - 2018 | Kélibia
+'/>
     </div>
+    <div className="col-2 "></div>
+  </div>
+  </div>
+  <br/><br/>
+  <div className="container-fluid">
+  <div className="row">
+    <div className="col-2 "></div>
+    <div className="col-sm-12 col-lg-8 "><Social/></div>
+    <div className="col-2 "></div>
+  </div>
+  </div>
+  </div>
+    
    
   );
 }
