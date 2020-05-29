@@ -8,9 +8,19 @@
 .margin-btn{
 margin-top: 20px;
 margin-bottom: 50px;
+margin-left: 0;
+padding-left: 0;
 }
 
-
+.fleximg{
+  -webkit-box-flex: 1;
+  flex: 1;
+  margin-right: 50px;
+  margin-top: 1em;
+}
+.margin{
+ padding-left: 50px;
+}
 
 .bg{
   background-color: #0A1930;
@@ -84,7 +94,7 @@ img{
   height: 2px;
   left: 50%;
   position: relative;
-  background: aqua;
+  background: rgb(100, 255, 218);
   transition: width 0.1s ease 0s, left 0.1s ease 0s;
   width: 0;
 }
@@ -152,6 +162,10 @@ font-weight: 300px;
 }
 .text-align{
   text-align: center;
+
+}
+img{
+margin-top: 70px;
 }
 .demo{ background: #2c304a; }
 .progress-title{

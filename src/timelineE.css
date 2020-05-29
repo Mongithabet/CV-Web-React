@@ -1,134 +1,375 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: Helvetica, sans-serif;
+body{margin-top:20px;}
+/* Timeline */
+.timeline {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #6c7293;
+  left: 50%;
+  margin-left: -1.5px;
+}
+
+.timeline .timeline-wrapper {
+  display: block;
+  margin-bottom: -40px;
+  position: relative;
+  width: 100%;
+  padding-right: 90px;
+}
+
+.timeline .timeline-wrapper:before {
+  content: " ";
+  display: table;
+}
+
+.timeline .timeline-wrapper:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.timeline .timeline-wrapper .timeline-panel {
+  border-radius: 2px;
+  padding: 20px;
+  position: relative;
+  background: #172A45;
+  border-radius: 6px;
+  width: 35%;
+  margin-left: 18%;
+  
+}
+
+.timeline .timeline-wrapper .timeline-panel:before {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 4px;
+  content: "";
+  left: 0;
+  right: 0;
+}
+
+.timeline .timeline-wrapper .timeline-panel:after {
+  position: absolute;
+  top: 10px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #172A45;
+  border-right: 0 solid #172A45;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+
+.timeline .timeline-wrapper .timeline-panel .timeline-title {
+  margin-top: 0;
+  color: rgb(136, 146, 176);
+  text-transform: uppercase;
+}
+
+.timeline .timeline-wrapper .timeline-panel .timeline-body p + p {
+  margin-top: 5px;
+  
+}
+
+.timeline .timeline-wrapper .timeline-panel .timeline-body ul {
+  margin-bottom: 0;
+}
+
+.timeline .timeline-wrapper .timeline-panel .timeline-footer span {
+  font-size: .6875rem;
+}
+
+.timeline .timeline-wrapper .timeline-panel .timeline-footer i {
+  font-size: 1.5rem;
+}
+
+.timeline .timeline-wrapper .timeline-badge {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 16px;
+  left: calc(50% - 7px);
+  z-index: 10;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border: 2px solid rgb(100, 255, 218);
+
+}
+
+.timeline .timeline-wrapper .timeline-badge i {
+  color: #172A45;
+}
+
+.timeline .timeline-wrapper.timeline-inverted {
+  padding-right: 0;
+  padding-left: 90px;
+  margin-bottom: -28px;
+  top: -200px;
+
+}
+
+.timeline .timeline-wrapper.timeline-inverted .timeline-panel {
+  margin-left: auto;
+  margin-right: 18%;
+  margin-top: -200px;
+  top: 200px;
+}
+
+.timeline .timeline-wrapper.timeline-inverted .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+  
+}
+
+@media (max-width: 767px) {
+  .timeline .timeline-wrapper {
+    padding-right: 150px;
   }
-  body {
-    background: #25303B;
+  .timeline .timeline-wrapper.timeline-inverted {
+    padding-left: 150px;
   }
-  section#timeline {
-    width: 80%;
-    margin: 20px auto;
-    position: relative;
+  .timeline .timeline-wrapper .timeline-panel {
+    width: 60%;
+    margin-left: 0;
+    margin-right: 0;
   }
-  section#timeline:before {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 50%;
-    top: 0;
-    margin: 0 0 0 -1px;
-    width: 2px;
-    height: 100%;
-    background: rgba(255,255,255,0.2);
+}
+
+@media (max-width: 576px) {
+  .timeline .timeline-wrapper .timeline-panel {
+    width: 68%;
   }
-  section#timeline article {
-    width: 100%;
-    margin: 0 0 20px 0;
-    position: relative;
-  }
-  section#timeline article:after {
-    content: '';
-    display: block;
-    clear: both;
-  }
-  section#timeline article div.inner {
-    width: 40%;
-    float: left;
-    margin: 5px 0 0 0;
-    border-radius: 6px;
-  }
-  section#timeline article div.inner span.date {
-    display: block;
-    width: 60px;
-    height: 50px;
-    padding: 5px 0;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin: 0 0 0 -32px;
-    border-radius: 100%;
-    font-size: 12px;
-    font-weight: 900;
-    text-transform: uppercase;
-    background: #25303B;
-    color: rgba(255,255,255,0.5);
-    border: 2px solid rgba(255,255,255,0.2);
-    box-shadow: 0 0 0 7px #25303B;
-  }
-  section#timeline article div.inner span.date span {
-    display: block;
-    text-align: center;
-  }
-  section#timeline article div.inner span.date span.day {
-    font-size: 10px;
-  }
-  section#timeline article div.inner span.date span.month {
-    font-size: 18px;
-  }
-  section#timeline article div.inner span.date span.year {
-    font-size: 10px;
-  }
-  section#timeline article div.inner h2 {
-    padding: 15px;
-    margin: 0;
-    color: #fff;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-    border-radius: 6px 6px 0 0;
-    position: relative;
-  }
-  section#timeline article div.inner h2:after {
-    content: '';
-    position: absolute;
-    top: 20px;
-    right: -5px;
-        width: 10px; 
-        height: 10px;
-    -webkit-transform: rotate(-45deg);
-  }
-  section#timeline article div.inner p {
-    padding: 15px;
-    margin: 0;
-    font-size: 14px;
-    background: #fff;
-    color: #656565;
-    border-radius: 0 0 6px 6px;
-  }
-  section#timeline article:nth-child(2n+2) div.inner {
-    float: right;
-  }
-  section#timeline article:nth-child(2n+2) div.inner h2:after {
-    left: -5px;
-  }
-  section#timeline article:nth-child(1) div.inner h2 {
-    background: #e74c3c;
-  }
-  section#timeline article:nth-child(1) div.inner h2:after {
-    background: #e74c3c;
-  }
-  section#timeline article:nth-child(2) div.inner h2 {
-    background: #2ecc71;
-  }
-  section#timeline article:nth-child(2) div.inner h2:after {
-    background: #2ecc71;
-  }
-  section#timeline article:nth-child(3) div.inner h2 {
-    background: #e67e22;
-  }
-  section#timeline article:nth-child(3) div.inner h2:after {
-    background: #e67e22;
-  }
-  section#timeline article:nth-child(4) div.inner h2 {
-    background: #1abc9c;
-  }
-  section#timeline article:nth-child(4) div.inner h2:after {
-    background: #1abc9c;
-  }
-  section#timeline article:nth-child(5) div.inner h2 {
-    background: #9b59b6;
-  }
-  section#timeline article:nth-child(5) div.inner h2:after {
-    background: #9b59b6;
-  }
+}
+
+.timeline-wrapper-primary .timeline-panel:before {
+  background: rgb(100, 255, 218);
+}
+
+.timeline-wrapper-primary .timeline-badge {
+  background: rgb(100, 255, 218);
+}
+
+.timeline-wrapper-secondary .timeline-panel:before {
+  background: #6c7293;
+}
+
+.timeline-wrapper-secondary .timeline-badge {
+  background: #6c7293;
+}
+
+.timeline-wrapper-success .timeline-panel:before {
+  background: #0ddbb9;
+}
+
+.timeline-wrapper-success .timeline-badge {
+  background: #0ddbb9;
+}
+
+.timeline-wrapper-info .timeline-panel:before {
+  background: #0ad7f7;
+}
+
+.timeline-wrapper-info .timeline-badge {
+  background: #0ad7f7;
+}
+
+.timeline-wrapper-warning .timeline-panel:before {
+  background: rgb(100, 255, 218);
+}
+
+.timeline-wrapper-warning .timeline-badge {
+  background: rgb(100, 255, 218);
+}
+
+.timeline-wrapper-danger .timeline-panel:before {
+  background: rgb(100, 255, 218);
+}
+
+.timeline-wrapper-danger .timeline-badge {
+  background: rgb(100, 255, 218);
+}
+
+.timeline-wrapper-light .timeline-panel:before {
+  background: #172A45;
+}
+
+.timeline-wrapper-light .timeline-badge {
+  background: #172A45;
+}
+
+.timeline-wrapper-dark .timeline-panel:before {
+  background: rgb(136, 146, 176);
+}
+
+.timeline-wrapper-dark .timeline-badge {
+  background: rgb(136, 146, 176);
+}
+
+
+/* Cards */
+.card {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  color: #172A45;
+}
+
+.card .card-body {
+  padding: 1.75rem 1.75rem;
+  color: #172A45;
+}
+
+.card .card-body + .card-body {
+  padding-top: 1rem;
+  color: #172A45;
+  
+}
+
+.card .card-title {
+  font-size: 40px;
+  line-height: 1.1;
+  margin: 0px;
+  font-weight: 400;
+  color: rgb(230, 241, 255);
+  margin-bottom: .5rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.card .card-subtitle {
+  font-weight: 400;
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+
+.card .card-description {
+  margin-bottom: .875rem;
+  font-weight: 400;
+  color: rgb(136, 146, 176);
+}
+
+.card.card-outline-success {
+  border: 1px solid #0ddbb9;
+}
+
+.card.card-outline-primary {
+  border: 1px solid rgb(100, 255, 218);
+  
+}
+
+.card.card-outline-warning {
+  border: 1px solid rgb(100, 255, 218);
+}
+
+.card.card-outline-danger {
+  border: 1px solid rgb(100, 255, 218);
+}
+
+.card.card-rounded {
+  border-radius: 5px;
+  
+}
+
+.card.card-faded {
+  background: #b5b0b2;
+  border-color: #b5b0b2;
+}
+
+.card.card-circle-progress {
+  color: #172A45;
+  text-align: center;
+}
+
+.card.card-img-holder {
+  position: relative;
+  
+  
+}
+
+.card.card-img-holder .card-img-absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+
+  
+}
+
+.card.card-weather .weather-daily .weather-day {
+  opacity: .5;
+  font-weight: 900;
+}
+
+.card.card-weather .weather-daily i {
+  font-size: 20px;
+}
+
+.card.card-weather .weather-daily .weather-temp {
+  margin-top: .5rem;
+  margin-bottom: 0;
+  opacity: .5;
+  font-size: .75rem;
+}
+
+.card-inverse-primary {
+  background: rgb(136, 146, 176);
+  border: 1px solid rgb(100, 255, 218);
+  color: #172A45;
+}
+
+.card-inverse-secondary {
+  background: rgb(136, 146, 176);
+  border: 1px solid #636987;
+  color: #172A45;
+}
+
+.card-inverse-success {
+  background: #172A45;
+  border: 1px solid #0cc9aa;
+  color: #0aa68d;
+}
+
+.card-inverse-info {
+  background: rgb(136, 146, 176);
+  border: 1px solid #09c6e3;
+  color: #08a3bc;
+}
+
+.card-inverse-warning {
+  background: rgba(252, 213, 57, 0.2);
+  border: 1px solid rgb(100, 255, 218);
+  color: rgb(100, 255, 218);
+}
+
+.card-inverse-danger {
+  background: rgba(239, 89, 88, 0.2);
+  border: 1px solid rgb(100, 255, 218);
+  color: rgb(100, 255, 218);
+  
+}
+
+.card-inverse-light {
+  background: rgba(234, 234, 234, 0.2);
+  border: 1px solid #172A45;
+  color: #b2b2b2;
+}
+
+.card-inverse-dark {
+  background: rgb(136, 146, 176);
+  border: 1px solid #172A45;
+  color: rgb(136, 146, 176);
+}

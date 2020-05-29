@@ -1,7 +1,5 @@
 import React from 'react';
 import './App.css';
-import Content from './components/Content'
-
 import Navbar from './components/Navbar'
 import Apropos from './components/Apropos'
 import Competences from './components/Competences'
@@ -36,11 +34,11 @@ import {
               <div className="row">
   <div className="col-2  "></div>
   <div className=" col-sm-12 col-lg-10 ">
-  <Content/>
+  <Apropos/>    
   <Route exact path="#fat"render={props =>
   <div>
 
-<Content/>
+<Apropos/>
   </div>
 } />
          

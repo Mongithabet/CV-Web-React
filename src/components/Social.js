@@ -1,46 +1,41 @@
 import React, { Component } from 'react'
 import '../social.css'
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	Link,
+	Redirect,
+	useHistory,
+	useLocation
+  } from "react-router-dom";
+ 
 export default class Social extends Component {
    
-
+	
     render() {
         return (
+			<Router>
             <div>
-         <div className="container-fluid">
+         <div className="container">
     <div className="row">
-	
+      <div>
+        <ul className="social-network social-circle">
+          <li><Link to={this.Test} className="icoGit" title="Git"><i className="fa fa-github"></i></Link></li>
+		  <li><a Link="#" className="icoLinkedin" title="Linkedin"><i className="fa fa-linkedin"></i></a></li>
 
-			<div className="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
-				<div className="icon-circle">
-					<a href="#" className="ifacebook" title="Facebook"><i className="fa fa-facebook"></i></a>
-				</div>
-			</div>
-     
-			<div className="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
-				<div className="icon-circle">
-					<a href="#" className="itwittter" title="Twitter"><i className="fa fa-twitter"></i></a>
-				</div>
-			</div>
-      
-			<div className="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
-				<div className="icon-circle">
-					<a href="#" className="igoogle" title="Google+"><i className="fa fa-google-plus"></i></a>
-				</div>
-			</div>
-      
-			<div className="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
-				<div className="icon-circle">
-					<a href="#" className="iLinkedin" title="Linkedin"><i className="fa fa-linkedin"></i></a>
-				</div>
-			</div>
-
-		</div>
-	</div>
+		  <li><a Link="#" className="icoFacebook" title="Facebook"><i className="fa fa-facebook"></i></a></li>
+          <li><a Link="#" className="icoTwitter" title="Twitter"><i className="fa fa-twitter"></i></a></li>
+          <li><a Link="#" className="icoYoutube" title="Youtube"><i className="fa fa-youtube"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
+</Router>
           
         )
     }
 }
-
 
 

@@ -1,146 +1,375 @@
-
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
-@import url("https://fonts.googleapis.com/css?family=Oswald");
-/*media queries*/
-html {
-  box-sizing: border-box;
+body{margin-top:20px;}
+/* Timeline */
+.timeline {
+  list-style: none;
+  padding: 0;
+  position: relative;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #6c7293;
+  left: 50%;
+  margin-left: -1.5px;
 }
 
-body {
-  background-color: #444444;
-  font-family: "Open Sans", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
-  font-size: 0.875em;
-  color: #212121;
-  line-height: 1.5;
+.timeline .timeline-wrapper {
+  display: block;
+  margin-bottom: -40px;
+  position: relative;
+  width: 100%;
+  padding-right: 90px;
 }
 
-.wrapper {
-  margin: 3.125em auto;
-  padding: 1em 5em 1em;
-  max-width: 1000px;
+.timeline .timeline-wrapper:before {
+  content: " ";
+  display: table;
 }
 
-h1 {
-  color: white;
-  font-family: "Open Sans", "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+.timeline .timeline-wrapper:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.timeline .timeline-wrapper .timeline-panel {
+  border-radius: 2px;
+  padding: 20px;
+  position: relative;
+  background: #172A45;
+  border-radius: 6px;
+  width: 35%;
+  margin-left: 18%;
+  
+}
+
+.timeline .timeline-wrapper .timeline-panel:before {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 4px;
+  content: "";
+  left: 0;
+  right: 0;
+}
+
+.timeline .timeline-wrapper .timeline-panel:after {
+  position: absolute;
+  top: 10px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #172A45;
+  border-right: 0 solid #172A45;
+  border-bottom: 14px solid transparent;
+  content: " ";
+}
+
+.timeline .timeline-wrapper .timeline-panel .timeline-title {
+  margin-top: 0;
+  color: rgb(136, 146, 176);
+  text-transform: uppercase;
+}
+
+.timeline .timeline-wrapper .timeline-panel .timeline-body p + p {
+  margin-top: 5px;
+  
+}
+
+.timeline .timeline-wrapper .timeline-panel .timeline-body ul {
+  margin-bottom: 0;
+}
+
+.timeline .timeline-wrapper .timeline-panel .timeline-footer span {
+  font-size: .6875rem;
+}
+
+.timeline .timeline-wrapper .timeline-panel .timeline-footer i {
+  font-size: 1.5rem;
+}
+
+.timeline .timeline-wrapper .timeline-badge {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 16px;
+  left: calc(50% - 7px);
+  z-index: 10;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border: 2px solid rgb(100, 255, 218);
+
+}
+
+.timeline .timeline-wrapper .timeline-badge i {
+  color: #172A45;
+}
+
+.timeline .timeline-wrapper.timeline-inverted {
+  padding-right: 0;
+  padding-left: 90px;
+  margin-bottom: -28px;
+  top: -200px;
+
+}
+
+.timeline .timeline-wrapper.timeline-inverted .timeline-panel {
+  margin-left: auto;
+  margin-right: 18%;
+  margin-top: -200px;
+  top: 200px;
+}
+
+.timeline .timeline-wrapper.timeline-inverted .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+  
+}
+
+@media (max-width: 767px) {
+  .timeline .timeline-wrapper {
+    padding-right: 150px;
+  }
+  .timeline .timeline-wrapper.timeline-inverted {
+    padding-left: 150px;
+  }
+  .timeline .timeline-wrapper .timeline-panel {
+    width: 60%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .timeline .timeline-wrapper .timeline-panel {
+    width: 68%;
+  }
+}
+
+.timeline-wrapper-primary .timeline-panel:before {
+  background: rgb(100, 255, 218);
+}
+
+.timeline-wrapper-primary .timeline-badge {
+  background: rgb(100, 255, 218);
+}
+
+.timeline-wrapper-secondary .timeline-panel:before {
+  background: #6c7293;
+}
+
+.timeline-wrapper-secondary .timeline-badge {
+  background: #6c7293;
+}
+
+.timeline-wrapper-success .timeline-panel:before {
+  background: #0ddbb9;
+}
+
+.timeline-wrapper-success .timeline-badge {
+  background: #0ddbb9;
+}
+
+.timeline-wrapper-info .timeline-panel:before {
+  background: #0ad7f7;
+}
+
+.timeline-wrapper-info .timeline-badge {
+  background: #0ad7f7;
+}
+
+.timeline-wrapper-warning .timeline-panel:before {
+  background: rgb(100, 255, 218);
+}
+
+.timeline-wrapper-warning .timeline-badge {
+  background: rgb(100, 255, 218);
+}
+
+.timeline-wrapper-danger .timeline-panel:before {
+  background: rgb(100, 255, 218);
+}
+
+.timeline-wrapper-danger .timeline-badge {
+  background: rgb(100, 255, 218);
+}
+
+.timeline-wrapper-light .timeline-panel:before {
+  background: #172A45;
+}
+
+.timeline-wrapper-light .timeline-badge {
+  background: #172A45;
+}
+
+.timeline-wrapper-dark .timeline-panel:before {
+  background: rgb(136, 146, 176);
+}
+
+.timeline-wrapper-dark .timeline-badge {
+  background: rgb(136, 146, 176);
+}
+
+
+/* Cards */
+.card {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  color: #172A45;
+}
+
+.card .card-body {
+  padding: 1.75rem 1.75rem;
+  color: #172A45;
+}
+
+.card .card-body + .card-body {
+  padding-top: 1rem;
+  color: #172A45;
+  
+}
+
+.card .card-title {
+  font-size: 40px;
+  line-height: 1.1;
+  margin: 0px;
+  font-weight: 400;
+  color: rgb(230, 241, 255);
+  margin-bottom: .5rem;
+  text-transform: capitalize;
   text-align: center;
 }
 
-/* - &:nth-child(1) {
-			 grid-area: entry1;
-		 }
-   - useful timesaver if there is a lengthy list
-*/
-.timeline {
-  line-height: 1.5em;
-  font-size: 14px;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  position: relative;
-  counter-reset: section;
+.card .card-subtitle {
+  font-weight: 400;
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
 }
-.timeline:before {
-  content: "";
-  width: 10px;
-  height: 100%;
-  background: #87ceeb;
+
+.card .card-description {
+  margin-bottom: .875rem;
+  font-weight: 400;
+  color: rgb(136, 146, 176);
+}
+
+.card.card-outline-success {
+  border: 1px solid #0ddbb9;
+}
+
+.card.card-outline-primary {
+  border: 1px solid rgb(100, 255, 218);
+  
+}
+
+.card.card-outline-warning {
+  border: 1px solid rgb(100, 255, 218);
+}
+
+.card.card-outline-danger {
+  border: 1px solid rgb(100, 255, 218);
+}
+
+.card.card-rounded {
+  border-radius: 5px;
+  
+}
+
+.card.card-faded {
+  background: #b5b0b2;
+  border-color: #b5b0b2;
+}
+
+.card.card-circle-progress {
+  color: #172A45;
+  text-align: center;
+}
+
+.card.card-img-holder {
+  position: relative;
+  
+  
+}
+
+.card.card-img-holder .card-img-absolute {
   position: absolute;
   top: 0;
-  left: -3.313em;
-  border-radius: 40px 40px;
+  right: 0;
+  height: 100%;
+
+  
 }
 
-.timeline--entry {
-  position: relative;
-  background-color: #eeeeee;
-}
-.timeline--entry__title {
-  color: white;
-  background-color: #ec407a;
-  font-family: "Oswald", Georgia, Cambria, "Times New Roman", Times, serif;
-  font-weight: 300;
-  font-size: 1rem;
-  padding: 1em;
-}
-.timeline--entry__title:before {
-  content: "";
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  position: absolute;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  left: -1em;
-  border-right: 10px solid #ec407a;
-}
-.timeline--entry__detail {
-  background-color: #dddddd;
-  padding: 1em;
-  margin: 0;
-}
-.timeline--entry:before {
-  content: "";
-  font-family: "Oswald", Georgia, Cambria, "Times New Roman", Times, serif;
-  color: #ffffff;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-          justify-content: center;
-  width: 3em;
-  height: 3em;
-  background-color: #87ceeb;
-  border: 0.2em solid white;
-  border-radius: 50%;
-  position: absolute;
-  counter-increment: section;
-  content: counter(section);
-  text-shadow: 0 1px 0 #424242;
-  left: -4.5em;
+.card.card-weather .weather-daily .weather-day {
+  opacity: .5;
+  font-weight: 900;
 }
 
-@supports (display: grid) {
-  @media (min-width: 768px) {
-    .timeline {
-      display: grid;
-      grid-gap: 4.75em;
-      grid-template-areas: ".  entry1" "entry2  ." ". entry3" "entry4 ." ". entry5";
-    }
-    .timeline:before {
-      left: 49.5%;
-    }
+.card.card-weather .weather-daily i {
+  font-size: 20px;
+}
 
-    .timeline--entry:nth-child(1) {
-      grid-area: entry1;
-    }
-    .timeline--entry:nth-child(2) {
-      grid-area: entry2;
-    }
-    .timeline--entry:nth-child(3) {
-      grid-area: entry3;
-    }
-    .timeline--entry:nth-child(4) {
-      grid-area: entry4;
-    }
-    .timeline--entry:nth-child(5) {
-      grid-area: entry5;
-    }
-    .timeline--entry:nth-of-type(odd):before {
-      left: -3.8em;
-    }
-    .timeline--entry:nth-of-type(even):not(:nth-of-type(odd)) .timeline--entry__title:before {
-      left: 100%;
-      border-left: 10px solid #ec407a;
-      border-right: 0;
-    }
-    .timeline--entry:nth-of-type(even):before {
-      left: 103%;
-    }
-  }
+.card.card-weather .weather-daily .weather-temp {
+  margin-top: .5rem;
+  margin-bottom: 0;
+  opacity: .5;
+  font-size: .75rem;
+}
+
+.card-inverse-primary {
+  background: rgb(136, 146, 176);
+  border: 1px solid rgb(100, 255, 218);
+  color: #353bb5;
+}
+
+.card-inverse-secondary {
+  background: rgb(136, 146, 176);
+  border: 1px solid #636987;
+  color: #525770;
+}
+
+.card-inverse-success {
+  background: rgba(13, 219, 185, 0.2);
+  border: 1px solid #0cc9aa;
+  color: #0aa68d;
+}
+
+.card-inverse-info {
+  background: rgb(136, 146, 176);
+  border: 1px solid #09c6e3;
+  color: #08a3bc;
+}
+
+.card-inverse-warning {
+  background: rgba(252, 213, 57, 0.2);
+  border: 1px solid rgb(100, 255, 218);
+  color: rgb(100, 255, 218);
+}
+
+.card-inverse-danger {
+  background: rgba(239, 89, 88, 0.2);
+  border: 1px solid rgb(100, 255, 218);
+  color: rgb(100, 255, 218);
+  
+}
+
+.card-inverse-light {
+  background: rgba(234, 234, 234, 0.2);
+  border: 1px solid #172A45;
+  color: #b2b2b2;
+}
+
+.card-inverse-dark {
+  background: rgb(136, 146, 176);
+  border: 1px solid #001533;
+  color: rgb(136, 146, 176);
 }

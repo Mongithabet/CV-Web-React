@@ -1,45 +1,45 @@
 import React, { Component } from 'react'
 import '../App.css';
-import logo from './icons/logo.png'
-
+import Content from './Content'
+import Competences from './Competences'
+import Progress from './Progress'
+import Experience from './Experience'
+import Projets from './Projets'
+import Education from './Education'
+import Social from './Social'
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+  Link
+  
+  } from "react-router-dom";
 export default class Navbar extends Component {
    
     render() {
         return (
-            <nav className="navbar fixed-top  navbar-expand-lg navbar-light bg ">
-       <div className="container-sm"> 
-       <a href="#"><img className="Slogo" src={logo}  alt="logo"/></a>
-
-       </div>
-
-            <a className="navbar-brand text-white a2" href="#">A PROPOS</a>
-            <button className="navbar-toggler bg2" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            
-            <div className="collapse navbar-collapse" id="navbarNav">
-              <ul className="navbar-nav">
-                <li className="nav-item active">
-                  <a className="nav-link text-white a2" href="#">COMPÉTENCES <span className="sr-only bg2">(current)</span></a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link text-white a2" href="#">EXPÉRIENCES</a>
-                </li>
-                
-                <li className="nav-item">
-                  <a className="nav-link text-white a2" href="#">PROJETS</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link  text-white a2" href="#">EDUCATION</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link  text-white a2" href="#">ACTIVITÉS</a>
-                </li>
-                
-              </ul>
-            </div>
-            
-          </nav>
+          <nav id="navbar-example2" class="navbar fixed-top navbar-light bg-light">
+          <a class="navbar-brand" Link="#">Navbar</a>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+            {/* <Link className="nav-link" to="#fat" href="#fat">Apropos</Link> */}
+               <a class="nav-link" href="#fat">Apropos</a> 
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#mdo">Competences</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#one">one</a>
+                <a class="dropdown-item" href="#two">two</a>
+                <div role="separator" class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#three">three</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      
         )
     }
 }

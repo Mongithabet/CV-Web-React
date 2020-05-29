@@ -1,149 +1,62 @@
-
-body{
-    padding-top: 50px;
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+    padding: 0;
+}
+ul.social-network li {
+	display: inline;
+    margin: 0 5px;
+   
 }
 
 
-
-
-.icon-circle .fa{
-    font-size           : 25px;
-    color               : #e84700;
-    margin              : 0 auto;
-    height              : 80px;
-    width               : 80px;
-    border-radius       : 50%;
-    border              :2px solid #e84700;
-    line-height         : 80px;
-    cursor              : pointer;
-    -webkit-transition  : all  ease-in-out 0.35s;
-    -moz-transition     : all  ease-in-out 0.35s;
-    -o-transition       : all  ease-in-out 0.35s;
-    -ms-transition      : all  ease-in-out 0.35s;
-    transition          : all  ease-in-out 0.20s,background-color ease-in-out 0.05s;
+.social-network a.icoFacebook:hover {
+	background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+	background-color:#33ccff;
+}
+.social-network a.icoYoutube:hover {
+	background-color:#c53929;
+}
+.social-network a.icoGit:hover {
+	background-color:#172A45;
+}
+.social-network a.icoLinkedin:hover {
+	background-color:#007bb7;
+}
+.social-network a.icoGit:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoYoutube:hover i,
+.social-network a.icoYoutube:hover i, .social-network a.icoGit:hover i, .social-network a.icoLinkedin:hover i {
+	color:#fff;
 }
 
-.icon-circle  .fa:hover{
-    
-    background-color        : #e84700;    
-    color                   : #fff;
-    border                  : 1px solid #e84711;
-    -moz-box-shadow         : inset 0px 0px 0px 5px #ffffff;
-    -o-box-shadow           : inset 0px 0px 0px 5px #ffffff;
-    -ms-box-shadow          : inset 0px 0px 0px 5px #ffffff;
-    -webkit-box-shadow      : inset 0px 0px 0px 5px #ffffff;
-    box-shadow              : inset 0px 0px 0px 5px #ffffff;
-    -ms-transform           : scale(1.2,1.2); 
-    -webkit-transform       : scale(1.2,1.2);
-    -moz-transform          : scale(1.2,1.2); 
-    -o-transform            : scale(1.2,1.2); 
-    transform               : scale(1.2,1.2);  
+
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+	background-color: #0A1930;
+}
+.social-circle li i {
+	margin:0;
+	line-height:50px;
+	text-align: center;
 }
 
-.icon-circle  i:before{
-    margin-left         : 0px;
-    font-size           : 40px;
+
+.social-circle i {
+	color: #fff;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
 }
-
-@media (min-width:320px) and (max-width:768px) {
-
-
- .icon-circle .fa{
-    font-size           : 15px;
-    color               : #e84700;
-    margin              : 0 auto;
-    height              : 40px;
-    width               : 40px;
-    border-radius       : 50%;
-    border              :2px solid #e84700;
-    line-height         : 40px;
-    cursor              : pointer;
-    -webkit-transition  : all  ease-in-out 0.35s;
-    -moz-transition     : all  ease-in-out 0.35s;
-    -o-transition       : all  ease-in-out 0.35s;
-    -ms-transition      : all  ease-in-out 0.35s;
-    transition          : all  ease-in-out 0.20s,background-color ease-in-out 0.05s;
-}
-
-.icon-circle  .fa:hover{
-    
-    background-color        : #e84700;    
-    color                   : #fff;
-    border                  : 1px solid #e84711;
-    -moz-box-shadow         : inset 0px 0px 0px 5px #ffffff;
-    -o-box-shadow           : inset 0px 0px 0px 5px #ffffff;
-    -ms-box-shadow          : inset 0px 0px 0px 5px #ffffff;
-    -webkit-box-shadow      : inset 0px 0px 0px 5px #ffffff;
-    box-shadow              : inset 0px 0px 0px 5px #ffffff;
-    -ms-transform           : scale(1.2,1.2); 
-    -webkit-transform       : scale(1.2,1.2);
-    -moz-transform          : scale(1.2,1.2); 
-    -o-transform            : scale(1.2,1.2); 
-    transform               : scale(1.2,1.2);  
-}
-
-.icon-circle  i:before{
-    margin-left         : 0px;
-    font-size           : 20px;
-}   
-}
-
-.ifacebook .fa{
-    color               :#3B5998;
-    border              :2px solid #3B5998;
-    margin-left: 250px;
-
-}
-
-.ifacebook .fa:hover{
-    
-    background-color        : #3B5998;    
-    color                   : #fff;
-    border                  : 1px solid #3B5998;
-
-}
-
-.itwittter .fa{
-    color               : #33ccff;
-    border              :2px solid #33ccff;
-    margin-left: 260px;
-
-}
-
-.itwittter .fa:hover{
-    
-    background-color        : #33ccff;    
-    color                   : #fff;
-    border                  : 1px solid #33ccff;
-
-}
-
-.igoogle .fa{
-    color               : #BD3518;
-    border              :2px solid #BD3518;
-    margin-left: 270px;
-}
-
-.igoogle .fa:hover{
-    
-    background-color        : #BD3518;    
-    color                   : #fff;
-    border                  : 1px solid #BD3518;
-
-}
-
-.iLinkedin .fa{
-    color               : #007bb7;
-    border              :2px solid #007bb7;
-    margin-left: 280px;
-
-}
-
-.iLinkedin .fa:hover{
-    
-    background-color        :#007bb7;    
-    color                   : #fff;
-    border                  : 1px solid #007bb7;
-
-}
-
