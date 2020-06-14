@@ -1,10 +1,19 @@
 import React, { Component,Img } from 'react'
 import PropTypes from 'prop-types'
 import photo from './icons/photo.jpg'
-
+import cv from '../components/cv/CV_Developpeur_Full_Stack.pdf'
 import '../Animation.css'
 import '../App.css'
 import Animation from './Animation'
+
+
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route,
+  Link
+  
+  } from "react-router-dom";
 export default class Apropos extends Component {
    state = {
    }
@@ -24,7 +33,7 @@ export default class Apropos extends Component {
           
         
 <div className=" text-color">     
-      Je suis un Ingénieur génie logiciel basé à Tunis, Tunisie, spécialisé dans la création et la conception des applications Web, Desktop et Mobile de haute qualité...
+      Je suis un Ingénieur génie logiciel basé à Gabes, Tunisie, spécialisé dans la création et la conception des applications Web, Desktop et Mobile de haute qualité...
 </div>
 
 <div className=" margin-btn ">
@@ -33,7 +42,7 @@ export default class Apropos extends Component {
     </div>
     
     <div className="col-lg-7 col-sm-7">
-    <button className="btn ">Télécharger mon CV</button>
+    <Link to="/src/components/cv/CV_Developpeur_Full_Stack.pdf"><button className="btn ">Télécharger mon CV</button></Link>
     </div>
   </div>
   <hr></hr>
@@ -49,9 +58,9 @@ export default class Apropos extends Component {
     </div>
     <div class="container">
   <div class="row">
-    <div class="col-md-3 col-sm-12"><img  src={photo} width="150" height="150"  alt="M"/></div>
+    <div class="col-md-3 col-sm-12"><img  src={photo} width="150" height="160"  alt="M"/></div>
     <div class="col-md-6 col-sm-12 text-color text-align"><h1 className=" white">01. A propos</h1> 
-    Quand je suis née, je n'ai pas pleuré mais j'ai crié "Hello World" : D!
+    
 
 J'aime le développement frontend parce que je veux que tout soit beau!
 

@@ -1,10 +1,12 @@
 
-
+.marginNav{
+ padding-left: 400px;
+}
 .Slogo {
     width: 35px;
-    margin-right: 100px;
-    padding-top: 10px;
+   
   }
+ 
 .margin-btn{
 margin-top: 20px;
 margin-bottom: 50px;
@@ -209,4 +211,40 @@ margin-top: 70px;
 }
 @keyframes animate-positive{
     0% { width: 0; }
+}
+.loaderPosition{
+  position: absolute;
+    left: 50%;
+    top: 45%;
+    z-index: 1000;
+    height: 100px;
+    width: 31px;
+}
+.width{
+  height: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+#marginLogo{
+  margin-left: 0px;
+  margin-top: 200px;
+}
+.marginLogo2{
+  margin-top: 80px;
+}
+#marginLogoFr{
+  margin-left: -80px;
+  margin-top: 200px;
+ width: 17px;
+  
+}
+#marginLogoEn{
+  margin-left: -80px;
+  margin-top: 200px;
+  padding-left: 5px;
+ width: 30px;
+  
+}
+.color3{
+  color: rgb(100, 255, 218);
 }

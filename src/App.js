@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import Content from './components/Content'
-
 import Navbar from './components/Navbar'
-
+import Apropos from './components/Apropos'
+import Competences from './components/Competences'
+import Progress from './components/Progress'
 import Experience from './components/Experience'
 import Projets from './components/Projets'
 import Education from './components/Education'
 import Social from './components/Social'
+import Content from './components/Content'
+import ReactLoading from "react-loading";
+
 import {
 	BrowserRouter as Router,
 	Switch,
@@ -16,114 +19,56 @@ import {
   
   } from "react-router-dom";
   class App extends React.Component {
- 
+     
+constructor(props){
+  super(props);
+  this.enableMessage = this.enableMessage.bind(this);
+
+    this.state = {
+      displayMessage: false,
+    };
+
+    this.timer = setTimeout(this.enableMessage, 3000);
+}
+componentWillUnmount() {
+  clearTimeout(this.timer);
+}
+
+enableMessage() {
+  this.setState({displayMessage: true});
+}
+
     render() {
+      const {displayMessage} = this.state;
+
+    if (!displayMessage) {
+      return <div className="loaderPosition"> <ReactLoading type="spokes" color="#fff" />
+      </div>;    }
+
+    
+  
   return (
     <Router>
 <Switch>
-          
-    <div  className="container bg">
 
-              <Navbar/>
+    <div  className="container bg">
+    
             <Content/>
             
               <br/>
               <br/>
               <br/>
-              <div className="container-fluid">
-              <div className="row">
-  <div className="col-2  "></div>
-  <div className=" col-sm-12 col-lg-10 ">
+             
+<br/><br/><br/><br/>
+
+<br/>
+
+ 
+  </div>
+
+  <br/><br/>
   
  
-         
-              <div className="col-2"></div>
-</div>
-</div></div>
-<br/><br/><br/><br/>
-              <div className="container-fluid">
-              <div className="row">
-  <div className="col-2  "></div>
-  <div className=" col-sm-12 col-lg-8  "> 
-         
-              </div>
-  <div className="col-2"></div>
-</div>
-</div>
-
-<div className="container">
-              <div className="row">
-  <div className="col-2"></div>
-  <div className="col-sm-12 col-lg-8">
-              
-     </div>
-  <div className="col-2"></div>
-</div>
-</div>
-
-<div className="container">
-              <div className="row">
-  <div className="col-2"></div>
-  <div className="col-sm-12 col-lg-8">
-       
-             
-                  </div>
-  <div className="col-2"></div>
-</div>
-</div>
-
-<div className="container">
-              <div className="row">
-  <div className="col-2"></div>
-  <div className="col-sm-12 col-lg-8">
-
-
- 
-                  </div>
-  <div className="col-2"></div>
-</div>
-</div>
-<br/>
-<div className="container">
-  <div className="row">
-  <div className="col-1 margin "></div>
-
-    <div className="col-sm-12 col-lg-12 "><Experience/></div>
-    <div className="col-1 "></div>
-  </div>
-  <div className="container-fluid">
-  <div className="row">
-    <div className="col-2 "></div>
-    <div className="col-sm-12 col-lg-12 "><Projets nom="02-Projets"/></div>
-    <div className="col-2 "></div>
-  </div>
-  </div>
-  </div>
-  <div className="container-fluid">
-  <div className="row">
-    <div className="col-2 "></div>
-    <div className="col-sm-12 col-lg-12 "><Education nom="03-Education"/></div>
-    <div className="col-2 "></div>
-  </div>
-  </div>
-  <div className="container-fluid">
-  <div className="row">
-    <div className="col-2 "></div>
-    <div className="col-sm-12 col-lg-8 ">
-   
-    </div>
-    <div className="col-2 "></div>
-  </div>
-  </div>
-  <br/><br/>
-  <div className="container-fluid">
-  <div className="row">
-    <div className="col-2 "></div>
-    <div className="col-sm-12 col-lg-8 "><Social git="https://github.com/Mongithabet"/></div>
-    <div className="col-2 "></div>
-  </div>
-  </div>
-  </div>
   </Switch>
     </Router>
    
