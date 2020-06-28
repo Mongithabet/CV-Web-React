@@ -45,11 +45,11 @@ export default class Apropos extends Component {
     <Link to="/src/components/cv/CV_Developpeur_Full_Stack.pdf"><button className="btn ">Télécharger mon CV</button></Link>
     </div>
   </div>
-  <hr></hr>
-  <hr></hr>
-  <hr></hr>
-  <hr></hr>
-  
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+
 </div>
 
 
@@ -58,7 +58,7 @@ export default class Apropos extends Component {
     </div>
     <div class="container">
   <div class="row">
-    <div class="col-md-3 col-sm-12"><img  src={photo} width="150" height="160"  alt="M"/></div>
+    <div  class=" col-md-3 col-sm-12"><img  src={photo} width="150" height="160"  alt="M"/></div>
     <div class="col-md-6 col-sm-12 text-color text-align"><h1 className=" white">01. A propos</h1> 
     
 
@@ -71,6 +71,7 @@ J'adore l'informatique et les sciences de données car ça me permet de voyager 
 C'est moi, bienvenue dans mon univers!  </div>
   </div>
 </div>
+
   </div>
   
              

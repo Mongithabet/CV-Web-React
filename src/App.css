@@ -59,12 +59,24 @@ img{
   color: #000;
   border-radius: 50rem;
 }
+.img2{
+  color: #000;
+  border-radius: 0rem !important; 
+}
 .bold{
   
   font-size: 80px;
     line-height: 1.1;
     margin: 0px;
     font-weight: 600;
+    color: rgb(230, 241, 255);
+}
+.bold2{
+  
+  font-size: 40px;
+    line-height: 1.1;
+    margin: 0px;
+    font-weight: 400;
     color: rgb(230, 241, 255);
 }
 .btn{
@@ -106,7 +118,7 @@ img{
 
 }
 .text-color{
-  color: rgb(136, 146, 176);
+  color: #BBC5E5;
 text-align: left;
 font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
 font-size: 15px;
@@ -199,7 +211,6 @@ margin-top: 70px;
     font-size: 12px;
     color: #fff;
     border-radius: 0 0 15px 15px;
-    border: 1px solid #000;
     border-top: none;
     box-shadow: 0 2px 2px #4f4c4c;
     position: absolute;
@@ -231,6 +242,7 @@ margin-top: 70px;
 }
 .marginLogo2{
   margin-top: 80px;
+
 }
 #marginLogoFr{
   margin-left: -80px;
@@ -248,3 +260,15 @@ margin-top: 70px;
 .color3{
   color: rgb(100, 255, 218);
 }
+.margin2{
+  margin-left: 0px!important; 
+  margin-right: 0px!important; 
+  padding-left: 0px !important; 
+  padding-right: 0px !important; 
+
+}
+/* @media (max-width: 576px) {
+  .margin2 {
+    width: 100%;
+  }
+} */

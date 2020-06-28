@@ -36,7 +36,7 @@ export default class Content extends Component {
  
   
   
-       <div className="container  ">
+       <div className="container-fluid  ">
        <div className="container-sm"> 
        <a href="#"><img   className="Slogo" src={logo}  alt="logo"/></a>
        <a href="#" ><img  width="20" height="20" src={fr}  alt="fr"/></a> 
@@ -77,21 +77,24 @@ export default class Content extends Component {
         </nav>
         </div>
         <div className="jumbotron-fluid text-center one" id="one">
-          <span className="display-3"></span> <div className="container-fluid">
-              <div className="row">
-  <div className="col-2  "></div>
-  <div className=" col-sm-12 col-lg-10 marginLogo2 ">
+          <span className="display-3"></span>
+          <div className="container bg">
+    <div className="row ">
+
+    <div className="col-md-12">
+    <div className="col col-sm col-md col-md-12  ">
   <Apropos/>    
   
-              <div className="col-2"></div>
-</div>
-</div></div>
-        </div>
+
+</div></div></div>
+       </div> </div>
         <div className="jumbotron-fluid2 text-center two" id="two">
           <span className="display-3"></span> <div className="container">
-              <div className="row">
-  <div className="col-2  "></div>
-  <div className=" col-sm-12 col-lg-8 marginLogo2 "> 
+          <div className="container bg">
+    <div className="row ">
+
+    <div className="col-md-12">
+    <div className="col col-sm col-md col-md-12  ">
           <Competences 
               nom='02.Compétences professionnelles' 
               title='Langages de programmation'
@@ -110,15 +113,16 @@ export default class Content extends Component {
                
                  />}
               />
-              </div>
+                  </div> </div>
   <div className="col-2"></div>
 </div>
 </div>
-             
-<div className="container">
-              <div className="row">
-  <div className="col-2"></div>
-  <div className="col-sm-12 col-lg-8">
+
+<div className="container bg">
+    <div className="row ">
+
+    <div className="col-md-12">
+    <div className="col col-sm col-md col-md-12  ">
                <Competences
               nom='' 
               title='Base de données'
@@ -135,16 +139,16 @@ export default class Content extends Component {
 
                  />}
                />
-     </div>
+     </div> </div>
   <div className="col-2"></div>
 </div>
 </div>
 
-<div className="container">
-              <div className="row">
-  <div className="col-2"></div>
-  <div className="col-sm-12 col-lg-8">
-       
+<div className="container bg">
+    <div className="row ">
+
+    <div className="col-md-12">
+    <div className="col col-sm col-md col-md-12  ">
               <Competences
                nom='' 
                title='Frameworks & CMS'
@@ -162,31 +166,30 @@ export default class Content extends Component {
 
                  />}
                />
-                  </div>
+                  </div></div>
   <div className="col-2"></div>
 </div>
 </div>
+<div className="container bg">
+    <div className="row ">
 
-<div className="container">
-              <div className="row">
-  <div className="col-2"></div>
-  <div className="col-sm-12 col-lg-8">
-
-
+    <div className="col-md-12">
+    <div className="col col-sm col-md col-md-12  ">
   <Competences nom = ''  title='Autres' cont='Autres Technologies: Micronaut, ElasticSearch, Spring Security, REST APIs, Jenkins, Kubernetes, Docker, AWS, Google Cloud
 Méthodologies & Conception: UML, Scrum
 Testing: Test Driven Development, JUnit, Jasmine, ChaiJS, Enzyme
 Outils: GIT, IntelliJ, Slack
 '/>
-                  </div>
+                  </div></div>
   <div className="col-2"></div>
 </div>
 </div>
-<div className="container-fluid">
-  <div className="row">
-    <div className="col-2 "></div>
-    <div className="col-sm-12 col-lg-8 ">
-    <Competences nom = '06. Activités extracurriculaires et sociales'  title='' cont='• IAS Annual Meeting 2019 ♦ Participant, Travel Grant Recipient ♦ 2019 | Baltimore, MD, USA
+<div className="container bg">
+    <div className="row ">
+
+    <div className="col-md-12">
+    <div className="col col-sm col-md col-md-12  ">
+    <Competences nom = ''  title='06. Activités extracurriculaires et sociales' cont='• IAS Annual Meeting 2019 ♦ Participant, Travel Grant Recipient ♦ 2019 | Baltimore, MD, USA
 • IEEE Tunisia Section ExCom ♦ Student Branches Coordinator ♦ 2018 - Présent | ESPRIT
 • IAS Annual Meeting 2018 ♦ Participant, Travel Grant Recipient ♦ 2018 | Portland, OR, USA
 • IEEE ESPRIT CS Chapter & IAS Chapter ♦ Chair / Vice-Chair ♦ 2018 - Présent | ESPRIT
@@ -196,21 +199,26 @@ Outils: GIT, IntelliJ, Slack
 • Conseil scientifique ISSAT Sousse ♦ Représentant des étudiants ♦ 2015 – 2016 | ISSAT Sousse
 • Association culturelle et environnementale de Kélibia ACEK ♦ Membre Actif ♦ 2013 - 2018 | Kélibia
 '/>
-    </div>
+    </div> </div>
     <div className="col-2 "></div>
   </div>
   </div>
         </div>
         <div className="jumbotron-fluid3 text-center three" id="three">
           <span className="display-3"></span>
-          <div className="container">
+          <div className="container-fluid">
   <div className="row">
-  <div className="col-1  "></div>
+  <div className="col-5  "></div>
+  <div className="row white bold2">01-Experience</div>
+     <div className="container bg">
+    <div className="row ">
 
-    <div className="col-sm-12 col-lg-12 marginLogo2"><Experience/></div>
-    <div className="col-1 "></div>
-  </div></div>
-        </div>
+    <div className="col-md-12">
+    <div className="col col-sm col-md col-md-12  ">
+      <Experience/>
+      </div></div>
+  </div></div></div>
+        </div></div>
         <div className="jumbotron-fluid4 text-center four " id="four">
           <span className="display-3"></span> <div className="container-fluid">
   <div className="row">
@@ -238,7 +246,7 @@ Outils: GIT, IntelliJ, Slack
     <div className="col-5 "></div>
   </div>
   </div>
-      </div>
+      </div>      </div>
       </Switch>
       </Router>
         )

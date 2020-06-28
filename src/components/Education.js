@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import '../timelineE.css'
 
 export default class Education extends Component {
    
@@ -11,7 +10,7 @@ export default class Education extends Component {
   <div className="row">
     <div className="col-12">
       <div className="card bg">
-        <div className="card-body bg">
+      <div className="card-body margin2 bg">
         <h4 className="card-title">{this.props.nom}</h4>
           <div className="mt-5">
             <div className="timeline">
@@ -45,22 +44,11 @@ Machine Learning</p>
                 <div className="timeline-badge"></div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
-                    <h6 className="timeline-title">Bootstrap 4 Alpha 6</h6>
+                    <h6 className="timeline-title">Diplôme National d’ingénieur</h6>
                   </div>
                   <div className="timeline-body">
-                    <p>Septembre 2017 - Decembre 2017
-Refugee Camps
-SOLUTION POUR GÉRER LES CAMPS DE RÉFUGIÉS
-
-Réalisation d’une plateforme web Angular 2 (WebServices Rest Java EE), Backoffice (ASP.net) et mobile cross-platform ionic, afin de gérer des camps de réfugiés dans plusieurs pays. La plateforme permet de gérer les réfugiés, leurs besoins matériel, immatériel et médicales ainsi que gérer les stocks, les personnels et les dépenses.
-
-Java EE
-ASP.net
-Angular
-WebServices
-Ionic
-Wildfly
-Hibernate</p>
+                    <p className="text-color">Diplôme National d’ingénieur en Télécommunications et Réseaux 
+ ENIG, Gabès (Tunisie) </p>
                   </div>
                   <div className="timeline-footer d-flex align-items-center flex-wrap">
                       <i className="mdi mdi-heart-outline text-muted mr-1"></i>
@@ -73,18 +61,11 @@ Hibernate</p>
                 <div className="timeline-badge"></div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
-                    <h6 className="timeline-title">Bootstrap 4 Alpha 5</h6>
+                    <h6 className="timeline-title">Baccalauréat Technique</h6>
                   </div>
                   <div className="timeline-body">
-                    <p>Juillet 2017
-MShop
-APPLICATION MOBILE ANDROID POUR UNE BOUTIQUE EN LIGNE
-
-Réalisation d’une application mobile Android, pour une boutique en ligne. L’application permet une authentification sécuriser, payement à l’aide de Paypal, gestion de panier et localisation de boutique.
-
-Android
-Java
-Firebase</p>
+                    <p className="text-color">Baccalauréat Technique 
+ Lycée Abou Loubaba Gabès </p>
                   </div >
                   <div className="timeline-footer d-flex align-items-center flex-wrap">
                       <i className="mdi mdi-heart-outline text-muted mr-1"></i>

@@ -4,6 +4,7 @@ body{margin-top:20px;}
   list-style: none;
   padding: 0;
   position: relative;
+  margin:0;
 }
 
 .timeline:before {
@@ -126,6 +127,9 @@ body{margin-top:20px;}
   top: 200px;
 }
 
+
+
+
 .timeline .timeline-wrapper.timeline-inverted .timeline-panel:after {
   border-left-width: 0;
   border-right-width: 14px;
@@ -134,25 +138,41 @@ body{margin-top:20px;}
   
 }
 
-@media (max-width: 767px) {
+ @media (max-width: 767px) {
   .timeline .timeline-wrapper {
     padding-right: 150px;
   }
   .timeline .timeline-wrapper.timeline-inverted {
     padding-left: 150px;
+
   }
   .timeline .timeline-wrapper .timeline-panel {
-    width: 60%;
-    margin-left: 0;
-    margin-right: 0;
+    width: 68%;
+    margin-left: -10px;
+    padding-right: 0;
+    margin-right: -12px!important;
+
   }
 }
 
 @media (max-width: 576px) {
-  .timeline .timeline-wrapper .timeline-panel {
-    width: 68%;
+  .timeline .timeline-wrapper  .timeline-panel {
+    width: 80%;
+    margin-left: -45px;
+    margin-right: -45px!important;
+
   }
-}
+ 
+} 
+@media (min-width: 576px) {
+  .timeline .timeline-wrapper  .timeline-panel {
+    width: 50%;
+     margin-right: -10px!important;
+
+  }
+ 
+} 
+
 
 .timeline-wrapper-primary .timeline-panel:before {
   background: rgb(100, 255, 218);
@@ -226,6 +246,8 @@ body{margin-top:20px;}
   -moz-box-shadow: none;
   -ms-box-shadow: none;
   color: #172A45;
+  margin-right: 0;
+
 }
 
 .card .card-body {
@@ -236,7 +258,6 @@ body{margin-top:20px;}
 .card .card-body + .card-body {
   padding-top: 1rem;
   color: #172A45;
-  
 }
 
 .card .card-title {
@@ -290,7 +311,7 @@ body{margin-top:20px;}
 }
 
 .card.card-circle-progress {
-  color: #172A45;
+  color: #0A1930;
   text-align: center;
 }
 
@@ -364,12 +385,12 @@ body{margin-top:20px;}
 
 .card-inverse-light {
   background: rgba(234, 234, 234, 0.2);
-  border: 1px solid #172A45;
+  border: 1px solid #0A1930;
   color: #b2b2b2;
 }
 
 .card-inverse-dark {
   background: rgb(136, 146, 176);
-  border: 1px solid #001533;
+  border: 1px solid #0A1930;
   color: rgb(136, 146, 176);
 }

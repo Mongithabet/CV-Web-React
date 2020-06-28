@@ -28,7 +28,7 @@ constructor(props){
       displayMessage: false,
     };
 
-    this.timer = setTimeout(this.enableMessage, 3000);
+    this.timer = setTimeout(this.enableMessage, 2000);
 }
 componentWillUnmount() {
   clearTimeout(this.timer);

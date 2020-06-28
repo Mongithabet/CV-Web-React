@@ -4,6 +4,7 @@ body{margin-top:20px;}
   list-style: none;
   padding: 0;
   position: relative;
+  margin:0;
 }
 
 .timeline:before {
@@ -44,7 +45,6 @@ body{margin-top:20px;}
   border-radius: 6px;
   width: 35%;
   margin-left: 18%;
-  margin-bottom: -5px;
   
 }
 
@@ -126,6 +126,17 @@ body{margin-top:20px;}
   margin-top: -200px;
   top: 200px;
 }
+@media (max-width: 576px) {
+  .timeline .timeline-wrapper.timeline-inverted .timeline-panel  {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .timeline .timeline-wrapper.timeline-inverted .timeline-panel  {
+    margin-right: 10px;
+  }
+}
+
 
 .timeline .timeline-wrapper.timeline-inverted .timeline-panel:after {
   border-left-width: 0;
@@ -227,18 +238,18 @@ body{margin-top:20px;}
   -moz-box-shadow: none;
   -ms-box-shadow: none;
   color: #172A45;
+  margin-right: 0;
+
 }
 
 .card .card-body {
   padding: 1.75rem 1.75rem;
   color: #172A45;
-
 }
 
 .card .card-body + .card-body {
   padding-top: 1rem;
   color: #172A45;
-  
 }
 
 .card .card-title {
@@ -292,7 +303,7 @@ body{margin-top:20px;}
 }
 
 .card.card-circle-progress {
-  color: #172A45;
+  color: #0A1930;
   text-align: center;
 }
 
@@ -330,17 +341,17 @@ body{margin-top:20px;}
 .card-inverse-primary {
   background: rgb(136, 146, 176);
   border: 1px solid rgb(100, 255, 218);
-  color: #172A45;
+  color: #353bb5;
 }
 
 .card-inverse-secondary {
   background: rgb(136, 146, 176);
   border: 1px solid #636987;
-  color: #172A45;
+  color: #525770;
 }
 
 .card-inverse-success {
-  background: #172A45;
+  background: rgba(13, 219, 185, 0.2);
   border: 1px solid #0cc9aa;
   color: #0aa68d;
 }
@@ -366,12 +377,12 @@ body{margin-top:20px;}
 
 .card-inverse-light {
   background: rgba(234, 234, 234, 0.2);
-  border: 1px solid #172A45;
+  border: 1px solid #0A1930;
   color: #b2b2b2;
 }
 
 .card-inverse-dark {
   background: rgb(136, 146, 176);
-  border: 1px solid #172A45;
+  border: 1px solid #0A1930;
   color: rgb(136, 146, 176);
 }

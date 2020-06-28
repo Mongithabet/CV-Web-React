@@ -1,136 +1,67 @@
 import React, { Component } from 'react'
-import '../timeline.css'
+import tt from './icons/tt.svg'
+import gct from './icons/gct.png'
+import tpc from './icons/tpc.png'
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 export default class Experience extends Component {
   
 
     render() {
         return (
-            <div >
-<div className="container bg ">
-  <div className="row">
-    <div className="col-12">
-      <div className="card bg">
-        <div className="card-body bg">
-          <h4 className="card-title">01-Experience</h4>
-          <div className="mt-5">
-            <div className="timeline">
-              <div className="timeline-wrapper timeline-wrapper-warning">
-                <div className="timeline-badge"></div>
-                <div className="timeline-panel">
-                  <div className="timeline-heading">
-                    <h6 className="timeline-title">Bootstrap 4 Beta</h6>
-                  </div>
-                  <div className="timeline-body">
-                    <p>Septembre 2018 - Décembre 2018
-CAS Social Analytics
-SOLUTION D'ANALYSE ET PREDICTION
-Réalisation d'une plate-forme qui permet de collecter de donner à l'aide de webscrapping a partir de Linkedin, Analyser les données et prévoir les candidats potentiels pour une école privée.
+          <VerticalTimeline>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: '#172A45', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  #172A45' }}
+            date="2007 - 2020"
+            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+         
+          >
+            <h3 className="vertical-timeline-element-title">Développeur au sein de la Société TECHNOPC </h3>
+            <h4 className="vertical-timeline-element-subtitle"><img className="img2"  src={tpc} width="100" height="100"  alt="tpc"/></h4>
+            <p>Missions et tâches réalisées :  Développement et mise en page des sites Web avec l’intégration des éléments. Développement des Applications bureautiques  Outils utilisés : Spring Boot, ReactJS, Angular, React Native, SQL server, MySQL, CSS, HTML, JQUERY …             </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: '#172A45', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  #172A45' }}
 
-Python
-Django
-HTML / CSS
-JavaScript
-Webscraping
-Machine Learning</p>
-                  </div>
-                  <div className="timeline-footer d-flex align-items-center flex-wrap">
-                      <i className="mdi mdi-heart-outline text-muted mr-1"></i>
-                      <span>19</span>
-                      <span className="ml-md-auto font-weight-bold">19 Oct 2017</span>
-                  </div>
-                </div>
-              </div>
-              <div className="timeline-wrapper timeline-inverted timeline-wrapper-danger">
-                <div className="timeline-badge"></div>
-                <div className="timeline-panel">
-                  <div className="timeline-heading">
-                    <h6 className="timeline-title">Bootstrap 4 Alpha 6</h6>
-                  </div>
-                  <div className="timeline-body">
-                    <p>Septembre 2017 - Decembre 2017
-Refugee Camps
-SOLUTION POUR GÉRER LES CAMPS DE RÉFUGIÉS
+            date="2019 - 2020"
+            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+           
+          >
+            <h3 className="vertical-timeline-element-title">Groupe Chimique Tunisien</h3>
+            <h4 className="vertical-timeline-element-subtitle"><img className="img2"  src={gct} width="100" height="100"  alt="gct"/></h4>
+            <p>
+            Missions et tâches réalisées :  Conception et développement d’une application avec Java. Application de gestion des abonnés GCT.  
+ Outils utilisés : Java, Jasper Reports, SQL SERVER, UML Lien : <a href="https://www.youtube.com/channel/UCijIPSUnCs-WGse1q4mfoZw ">https://www.youtube.com/channel/UCijIPSUnCs-WGse1q4mfoZw</a>            </p>
+          
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: '#172A45', color: '#fff' }}
+            contentArrowStyle={{ borderRight: '7px solid  #172A45' }}
 
-Réalisation d’une plateforme web Angular 2 (WebServices Rest Java EE), Backoffice (ASP.net) et mobile cross-platform ionic, afin de gérer des camps de réfugiés dans plusieurs pays. La plateforme permet de gérer les réfugiés, leurs besoins matériel, immatériel et médicales ainsi que gérer les stocks, les personnels et les dépenses.
+            date="2012 - 2020"
+            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+           
+          >
+            <h3 className="vertical-timeline-element-title">Tunisie Telecom </h3>
+            <h4 className="vertical-timeline-element-subtitle"><img className="img2"  src={tt} width="100" height="100"  alt="tt"/>Stage PFE</h4>
+            <p>
+            Missions et tâches réalisées : Conception et réalisation d’une Application de Push-pull Des SMS via une interface Web.  Outils utilisés : Linux, Html, PHP, JavaScript, CSS... 
+            </p>
+          </VerticalTimelineElement>
+   
+        
+        
+          <VerticalTimelineElement
 
-Java EE
-ASP.net
-Angular
-WebServices
-Ionic
-Wildfly
-Hibernate</p>
-                  </div>
-                  <div className="timeline-footer d-flex align-items-center flex-wrap">
-                      <i className="mdi mdi-heart-outline text-muted mr-1"></i>
-                      <span>25</span>
-                      <span className="ml-md-auto font-weight-bold">10th Aug 2017</span>
-                  </div>
-                </div>
-              </div>
-              <div className="timeline-wrapper timeline-wrapper-success">
-                <div className="timeline-badge"></div>
-                <div className="timeline-panel">
-                  <div className="timeline-heading">
-                    <h6 className="timeline-title">Bootstrap 4 Alpha 5</h6>
-                  </div>
-                  <div className="timeline-body">
-                    <p>Juillet 2017
-MShop
-APPLICATION MOBILE ANDROID POUR UNE BOUTIQUE EN LIGNE
-
-Réalisation d’une application mobile Android, pour une boutique en ligne. L’application permet une authentification sécuriser, payement à l’aide de Paypal, gestion de panier et localisation de boutique.
-
-Android
-Java
-Firebase</p>
-                  </div >
-                  <div className="timeline-footer d-flex align-items-center flex-wrap">
-                      <i className="mdi mdi-heart-outline text-muted mr-1"></i>
-                      <span>19</span>
-                      <span className="ml-md-auto font-weight-bold">5th Sep 2016</span>
-                  </div>
-                </div>
-              </div>
-              <div className="timeline-wrapper timeline-inverted timeline-wrapper-info">
-                <div className="timeline-badge"></div>
-                <div className="timeline-panel">
-                  <div className="timeline-heading">
-                    <h6 className="timeline-title">Bootstrap 4 Alpha 4</h6>
-                  </div>
-                  <div className="timeline-body">
-                    <p>Janvier 2017 - Mai 2017
-Social Pro
-RÉSEAU SOCIAL PROFESSIONNEL - CROSS-PLATFORM
-
-Réalisation d’un réseau social professionnel en développant une application Web (Symfony 3), une application Desktop (Java SE, Java FX) et une application mobile (Cross-platform CodeName one) dans le cadre de projet intégré de développement à esprit..
-
-Symfony 3
-Java SE
-CodeName1
-Doctrine
-MySql
-HTML / CSS
-JavaScript</p>
-                  </div>
-                 
-                  <div className="timeline-footer d-flex align-items-center flex-wrap">
-                      <i className="mdi mdi-heart-outline text-muted mr-1"></i>
-                      <span>25</span>
-                      <span className="ml-md-auto font-weight-bold">25th July 2016</span>
-                  </div>
-                </div>
-              </div>
-             
-              </div>
-             
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+            iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+            
+          />
+        </VerticalTimeline>
         )
     }
 }

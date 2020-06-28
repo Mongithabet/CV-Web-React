@@ -1,37 +1,31 @@
 import React, { Component } from 'react'
-import '../timelineP.css'
-export default class Projets extends Component {
-    
+import tt from './icons/tt.svg'
+import gct from './icons/gct.png'
+import tpc from './icons/tpc.png'
+
+export default class Experience extends Component {
+  
+
     render() {
         return (
-          <section>
-            <div>
-             <div className="container bg ">
-  <div className="row">
-    <div className="col-12">
-      <div className="card bg">
-      <div className="card-body margin2 bg">
-        <h4 className="card-title">{this.props.nom}</h4>
+            <div >
+<div className="container-fluid bg  ">
+
+      <div className="card bg ">
+        <div className="card-body margin2 bg">
+          <h4 className="card-title">01-Experience</h4>
           <div className="mt-5">
             <div className="timeline">
               <div className="timeline-wrapper timeline-wrapper-warning">
                 <div className="timeline-badge"></div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
-                    <h6 className="timeline-title">Bootstrap 4 Beta</h6>
+                    <h6 className="timeline-title"><img  src={tpc} width="120" color="white" height="70"  alt="tpc"/>Développeur au sein de la Société TECHNOPC</h6>
                   </div>
                   <div className="timeline-body">
-                    <p>Septembre 2018 - Décembre 2018
-CAS Social Analytics
-SOLUTION D'ANALYSE ET PREDICTION
-Réalisation d'une plate-forme qui permet de collecter de donner à l'aide de webscrapping a partir de Linkedin, Analyser les données et prévoir les candidats potentiels pour une école privée.
-
-Python
-Django
-HTML / CSS
-JavaScript
-Webscraping
-Machine Learning</p>
+                    <p className="text-color">   Missions et tâches réalisées :  Développement et mise en page des sites Web avec l’intégration des éléments. Développement des Applications bureautiques  Outils utilisés : Spring Boot, ReactJS, Angular, React Native, SQL server, MySQL, CSS, HTML, JQUERY … 
+ 
+ </p>
                   </div>
                   <div className="timeline-footer d-flex align-items-center flex-wrap">
                       <i className="mdi mdi-heart-outline text-muted mr-1"></i>
@@ -44,22 +38,11 @@ Machine Learning</p>
                 <div className="timeline-badge"></div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
-                    <h6 className="timeline-title">Bootstrap 4 Alpha 6</h6>
+                    <h6 className="timeline-title"><img  src={gct} width="120" height="120"  alt="tt"/>Groupe Chimique Tunisien</h6>
                   </div>
                   <div className="timeline-body">
-                    <p>Septembre 2017 - Decembre 2017
-Refugee Camps
-SOLUTION POUR GÉRER LES CAMPS DE RÉFUGIÉS
-
-Réalisation d’une plateforme web Angular 2 (WebServices Rest Java EE), Backoffice (ASP.net) et mobile cross-platform ionic, afin de gérer des camps de réfugiés dans plusieurs pays. La plateforme permet de gérer les réfugiés, leurs besoins matériel, immatériel et médicales ainsi que gérer les stocks, les personnels et les dépenses.
-
-Java EE
-ASP.net
-Angular
-WebServices
-Ionic
-Wildfly
-Hibernate</p>
+                    <p className="text-color">Missions et tâches réalisées :  Conception et développement d’une application avec Java. Application de gestion des abonnés GCT.  
+ Outils utilisés : Java, Jasper Reports, SQL SERVER, UML Lien : https://www.youtube.com/channel/UCijIPSUnCs-WGse1q4mfoZw </p>
                   </div>
                   <div className="timeline-footer d-flex align-items-center flex-wrap">
                       <i className="mdi mdi-heart-outline text-muted mr-1"></i>
@@ -96,22 +79,11 @@ Firebase</p>
                 <div className="timeline-badge"></div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
-                    <h6 className="timeline-title">Bootstrap 4 Alpha 4</h6>
+                    <h6 className="timeline-title"><img  src={tt} width="120" height="120"  alt="tt"/>Tunisie Telecom Stage PFE </h6>
                   </div>
                   <div className="timeline-body">
-                    <p>Janvier 2017 - Mai 2017
-Social Pro
-RÉSEAU SOCIAL PROFESSIONNEL - CROSS-PLATFORM
-
-Réalisation d’un réseau social professionnel en développant une application Web (Symfony 3), une application Desktop (Java SE, Java FX) et une application mobile (Cross-platform CodeName one) dans le cadre de projet intégré de développement à esprit..
-
-Symfony 3
-Java SE
-CodeName1
-Doctrine
-MySql
-HTML / CSS
-JavaScript</p>
+                    <p  className="text-color">  
+Missions et tâches réalisées : Conception et réalisation d’une Application de Push-pull Des SMS via une interface Web.  Outils utilisés : Linux, Html, PHP, JavaScript, CSS... </p>
                   </div>
                  
                   <div className="timeline-footer d-flex align-items-center flex-wrap">
@@ -129,9 +101,7 @@ JavaScript</p>
           </div>
         </div>
       </div>
-    </div>
-</div> 
-</section>      
+ 
         )
     }
 }
